@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/css.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <aside>
+        <img src="https://b.radikal.ru/b06/2105/77/7dbda4d844ea.png"alt="Лого">
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="fas fa-newspaper"></i> Новости школы</li></a>
+            <a href="https://sgo1.edu71.ru/"><li><i class="fas fa-book-open"></i> Электронный дневник</li></a>
+            <a href="{% url 'python' %}"><li><i class="fas fa-graduation-cap"></i> О школе</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-user-circle"></i> Автор сайта</li></a>
+            <a href="{% url 'register_user' %}"><li><i class="fas fa-address-card"></i> Регистрация</li></a>
+            <a href="{% url 'login_user' %}"><li><i class="fas fa-door-open"></i> Вход</li></a>
+        </ul>
+    </aside>
+    <main>
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 205339669, {tooltipButtonText: "Есть вопрос?"});
+</script>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

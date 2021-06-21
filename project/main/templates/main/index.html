@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+
+{% for el in main %}
+        <div class="alert alert-warningg" style="position:absolute;left:500px; top:100px;">
+            {{ el.title|safe }}
+            {{ el.fill_text|safe }}
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

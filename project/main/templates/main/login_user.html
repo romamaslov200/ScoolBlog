@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+   <div class="alert alert-warninglog">
+       <h1>Вход на сайт</h1>
+    {% if error %}
+        <div style="color:red;">{{ error }}</div>
+    {% endif %}
+     <form method="post" action="" class="login">
+         {% csrf_token %}
+    <p>
+      <label for="login">Логин:</label>
+      <input type="text" name="login" id="login" >
+    </p>
+
+    <p>
+      <label for="password">Пароль:</label>
+      <input type="password" name="password" id="password" >
+    </p>
+
+    <p class="login-submit">
+      <button class="btn btn-warning">Войти</button>
+    </p>
+   </div>
+{% endblock %}

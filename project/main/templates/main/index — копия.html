@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Главная страница</h1>
+    </div>
+    <div class="card" style="width: 18rem; position:absolute;left:700px; top:860px;">
+  <img src="https://cdn1.ozone.ru/multimedia/1021915362.jpg" width="100" height="300" class="card-img-top" alt="Извените но картинка сломалась">
+  <div class="card-body">
+    <h5 class="card-title">Электронный дневник</h5>
+    <p class="card-text">С 11 января 2016 года во всех школах Тулы и Тульской области вводится единый электронный журнал "СЕТЕВОЙ ГОРОД. ОБРАЗОВАНИЕ."  sgo.edu71.ru</p>
+    <a href="https://sgo1.edu71.ru/" class="btn btn-primary">Перейти в электронный дневник</a>
+  </div>
+</div>
+
+</div>
+    <div class="card" style="width: 18rem; position:absolute;left:1000px; top:860px;">
+  <img src="http://shkool3.ucoz.ru/_nw/6/61758813.jpg" width="100" height="300" class="card-img-top" alt="Извените но картинка сломалась">
+  <div class="card-body">
+    <h5 class="card-title">Новасти школы</h5>
+    <p class="card-text">Новасти школы №3</p>
+    <a href="http://127.0.0.1:8000/news/" class="btn btn-primary">Перейти в раздел новасти "школы"</a>
+  </div>
+</div>
+
+    <div style="position:absolute;left:700px; top:200px;  ">
+        <img src="http://shkool3.ucoz.ru/_si/0/46290029.jpg" width="850" height="650" alt="альтернативный текст" />
+    </div>
+{% for el in main %}
+        <div class="alert alert-warningg" style="position:absolute;left:400px; top:1500px;">
+            {{ el.title|safe }}
+            {{ el.fill_text|safe }}
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

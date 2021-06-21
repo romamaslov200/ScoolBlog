@@ -1,0 +1,25 @@
+.alert-warninghomenews {
+   float:left;
+   background: #FFF3CD;
+   color: #856404;
+   clear: both;
+   width: 750px;
+   margin: 20px 17%;
+   text-align: left;
+}
+.alert-text {
+   float:left;
+   background: #FFF3CD;
+   color: #856404;
+   clear: both;
+   width: 500px;
+}
+
+.comment {
+   float:left;
+   color: #856404;
+   clear: both;
+   width: 1400px;
+   margin: 140px 7%;
+   text-align: left;
+}

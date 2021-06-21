@@ -1,0 +1,138 @@
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    float:left;
+    background: #181818;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 40px;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 350px;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: -30px;
+}
+
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05)
+}
+
+main .features {
+   float: left;
+   color: #fff;
+   margin-top: 100px;
+   text-align: center;
+   width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p1 {max-width: 400px; margin: 20px;}
+
+.alert-warning {
+   float:left;
+   clear: both;
+   width: 1000px;
+   margin: 20px 25%;
+   text-align: left;
+}
+
+.alert-warningg {
+   float:left;
+   background: #FFF3CD;
+   color: #856404;
+   clear: both;
+   width: 1400px;
+   margin: 20px 0%;
+   text-align: left;
+}
+
+.alert-warningreg {
+   float:left;
+    background: #9c5e24;
+    width: 35%;
+    padding: 2.5%;
+    height: 50vh;
+    margin: -800px 40%;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+.alert-warninglog h1 {font-size: 50px;}
+.alert-warninglog p {font-size: 30px; max-width: 400px; margin: 20px;}
+
+.alert-warninglog {
+   float:left;
+    background: #9c5e24;
+    width: 28%;
+    padding: 2.5%;
+    height: 50vh;
+    margin: -700px 45%;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+alert-warninglog:hover, alert-warninglog:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05)
+}
+
+.video_iframe
+{
+   color: #fff;
+   margin-top: 100px;
+   text-align: center;
+   width: 75%;
+}
+
+.featuresed h1 {font-size: 50px;}
+.featuresed p1 {font-size: 30px; max-width: 400px; margin: 20px;}
+
+.featuresed {
+   float: left;
+   color: #fff;
+   font-size: 1px;
+   margin-top: 750px;
+   text-align: center;
+   width: 75%;
+}
+
+.features h1 {font-size: 50px;}
+.features p1 {max-width: 400px; margin: 20px;}
+
+
+
