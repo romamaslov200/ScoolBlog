@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hdu+=0slfh0w!)#eghrfsu*rkl0_i@z!z^lxl*jo!8=014l(#b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["romanMaslov.pythonanywhere.com"]
 
 
 # Application definition
@@ -128,10 +128,10 @@ STATICFILES_DIRS = [
 #    '/var/www/static/',
 ]
 
-STATIC_ROOT = "/var/www/example.com/static/"
+STATIC_ROOT = "/home/RomanMaslov/ScoolBlog/project/static/"
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = '	/home/RomanMaslov/ScoolBlog/project/media	'
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
